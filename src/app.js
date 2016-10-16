@@ -1,5 +1,8 @@
 //import 'babel-polyfill';
-const angular = require('angular');
+//const angular = require('angular');
+
+import angular from 'angular';
+
 const ngModule = angular.module('app',[]);
 
 

@@ -1,9 +1,12 @@
+import tpl from './nv-hello.html';
+
 export default (ngModule) => {
     ngModule.directive('nvHello',() => {
+        console.log('directive init');
         return {
             restric: 'E',
             scope: {},
-            templateUrl: 'directives/nv-hello.html',
+            template: tpl,
             controllerAs: 'ctrl',
             controller: function() {
                 const ctrl = this;
