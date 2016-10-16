@@ -1,5 +1,7 @@
 import tpl from './nv-hello.html';
 
+require ('./nv-hello.scss');
+
 export default (ngModule) => {
     ngModule.directive('nvHello',() => {
         console.log('directive init');

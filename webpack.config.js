@@ -1,11 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-    context: __dirname + '/src',
+    context: path.join(__dirname, 'src'),
     devtool: 'source-map',
     entry: './app.js',
     output: {
-        path: __dirname + '/bin',
+        path: path.join(__dirname, 'bin'),
         filename: 'app.bundle.js'
     },
     module: {
@@ -20,6 +21,10 @@ module.exports = {
                 loader: 'html-loader',
                 exclude: /node_modules/
             },
+            {
+                test: /\.scss$/,
+                loaders: ["style", "css", "sass"]
+            }
         ]
     }
 };
