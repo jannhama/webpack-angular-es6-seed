@@ -1,6 +1,8 @@
 import tpl from './nv-hello.html';
 
-require ('./nv-hello.scss');
+import './nv-hello.scss';
+//import 'angular-ui-bootstrap/dist/ui-bootstrap-csp.css';
+require('../../styles/bootstrap.min.css');
 
 export default (ngModule) => {
     ngModule.directive('nvHello',() => {
