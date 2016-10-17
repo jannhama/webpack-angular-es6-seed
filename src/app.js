@@ -5,7 +5,8 @@ import angular from 'angular';
 const ngModule = angular.module('app',[]);
 import 'angular-ui-bootstrap';
 
-require('./directives').default(ngModule);
+require('./views').default(ngModule);
+require('./components').default(ngModule);
 
 import cats from './cats';
 //import component from './component';
