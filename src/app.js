@@ -7,6 +7,7 @@ import 'angular-ui-bootstrap';
 
 require('./views').default(ngModule);
 require('./components').default(ngModule);
+require('./services').default(ngModule);
 
 import cats from './cats';
 //import component from './component';

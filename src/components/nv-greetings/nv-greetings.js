@@ -3,12 +3,13 @@
 import tpl from './nv-greetings.html';
 
 
-
 /* @ngInject */
 class GreetingController {
 
-    constructor() {
-        this.greeting = 'Greeting earth people!';
+    constructor(MsgService) {
+        this.MsgService = MsgService;
+        //this.greeting = 'Greeting earth people!';
+        this.greeting = this.MsgService.getText();
     }
 
 }
@@ -25,6 +26,6 @@ export default (ngModule) => {
             template: tpl,
             controllerAs: 'ctrl',
             controller: GreetingController
-            };
+        };
     })
 };
