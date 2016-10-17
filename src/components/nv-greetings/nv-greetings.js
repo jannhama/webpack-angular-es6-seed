@@ -5,11 +5,18 @@ import tpl from './nv-greetings.html';
 
 /* @ngInject */
 class GreetingController {
-
+    
+    
     constructor(MsgService) {
+        console.log(JSON.stringify('greetins', null, 2));
         this.MsgService = MsgService;
+        console.log(JSON.stringify(this.MsgService, null, 2));
         //this.greeting = 'Greeting earth people!';
         this.greeting = this.MsgService.getText();
+    }
+
+    getText() {
+        return this.MsgService.getText();
     }
 
 }

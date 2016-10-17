@@ -5,12 +5,16 @@
 import angular from 'angular';
 import 'angular-ui-bootstrap';
 import 'angular-animate';
+
 const ngModule = angular.module('app',['ui.bootstrap','ngAnimate']);
 
-
+require('./services').default(ngModule);
 require('./views').default(ngModule);
 require('./components').default(ngModule);
-require('./services').default(ngModule);
+
+
+
+
 
 import cats from './cats';
 //import component from './component';
