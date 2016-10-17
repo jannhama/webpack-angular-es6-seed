@@ -9,6 +9,11 @@ class HomeController {
 
     constructor() {
         this.homeText = 'Welcome to Home!';
+        this.bool = false;
+    }
+
+    close() {
+        console.log(JSON.stringify(this, null, 2));
     }
 
 }

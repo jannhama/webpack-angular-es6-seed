@@ -1,9 +1,12 @@
 //import 'babel-polyfill';
 //const angular = require('angular');
 
+
 import angular from 'angular';
-const ngModule = angular.module('app',[]);
 import 'angular-ui-bootstrap';
+import 'angular-animate';
+const ngModule = angular.module('app',['ui.bootstrap','ngAnimate']);
+
 
 require('./views').default(ngModule);
 require('./components').default(ngModule);

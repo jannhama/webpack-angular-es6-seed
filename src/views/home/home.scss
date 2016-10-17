@@ -2,3 +2,14 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
 }
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}

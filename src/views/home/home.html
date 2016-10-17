@@ -1,5 +1,13 @@
+<div uib-alert class="alert-success" close="ctrl.close()">HELLO</div>
+
 <div class="home">
     Yoman! {{ctrl.homeText}}
 </div>
 <nv-hello></nv-hello>
 <nv-greeting></nv-greeting>
+
+<div ng-if="ctrl.bool" class="fade">
+    Fade me in out
+</div>
+<button ng-click="ctrl.bool=true">Fade In!</button>
+<button ng-click="ctrl.bool=false">Fade Out!</button>
