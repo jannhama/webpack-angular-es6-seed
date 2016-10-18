@@ -10,8 +10,9 @@ class HomeController {
     constructor() {
         console.log('homectrl cons.');
         this.homeText = 'Welcome to Home!';
-        this.bool = false;
+        this.hideItem = false;
     }
+
 
     close() {
         console.log(JSON.stringify(this, null, 2));

@@ -3,13 +3,23 @@
   font-size: 3em;
 }
 
-/* The starting CSS styles for the enter animation */
-.fade.ng-enter {
-  transition: 1s linear all;
-  opacity: 0;
+
+.dfade {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
 
-/* The finishing CSS styles for the enter animation */
-.fade.ng-enter.ng-enter-active {
-  opacity: 1;
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+  opacity: 0;
 }
