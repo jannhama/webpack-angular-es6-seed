@@ -1,5 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+//const occurence=webpack.optimize.OccurrenceOrderPlugin();
+//const dedupe=webpack.optimize.DedupePlugin();
+const webpack = require('webpack');
+const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
     context: path.join(__dirname, 'src'),
@@ -34,5 +38,21 @@ module.exports = {
                 loader: 'file-loader'
             }
         ]
-    }
+    },
+    plugins: [
+
+        new ngAnnotatePlugin({
+            add: true,
+            // other ng-annotate options here
+        }),
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress:{
+                warnings: true
+            }
+        }),
+
+
+    ]
 };

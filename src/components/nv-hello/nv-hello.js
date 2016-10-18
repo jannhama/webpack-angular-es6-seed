@@ -4,9 +4,9 @@ import tpl from './nv-hello.html';
 
 
 
-/* @ngInject */
-class ExampleController {
 
+class ExampleController {
+    /* @ngInject */
     constructor() {
         this.greeting = 'Hello THere!';
     }

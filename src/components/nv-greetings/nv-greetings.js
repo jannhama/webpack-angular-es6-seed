@@ -3,10 +3,10 @@
 import tpl from './nv-greetings.html';
 
 
-/* @ngInject */
+
 class GreetingController {
-    
-    
+
+    /* @ngInject */
     constructor(MsgService) {
         console.log(JSON.stringify('greetins', null, 2));
         this.MsgService = MsgService;
