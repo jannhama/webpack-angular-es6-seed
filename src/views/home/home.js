@@ -4,10 +4,11 @@ import tpl from './home.html';
 
 
 
-/* @ngInject */
-class HomeController {
 
+class HomeController {
+    /* @ngInject */
     constructor() {
+        console.log('homectrl cons.');
         this.homeText = 'Welcome to Home!';
         this.bool = false;
     }
@@ -23,9 +24,9 @@ export default (ngModule) => {
 
     ngModule.controller('HomeController', HomeController);
     ngModule.directive('homeView', () => {
-        console.log('directive init');
+        console.log('directive home init');
         return {
-            restric: 'E',
+            restrict: 'E',
             scope: {},
             template: tpl,
             controllerAs: 'ctrl',
