@@ -1,6 +1,5 @@
 'use strict';
 
-
 class MsgService {
     /* @ngInject */
     constructor() {
@@ -11,14 +10,11 @@ class MsgService {
     getText() {
         console.log(JSON.stringify(this.homeText, null, 2));
         return this.homeText;
-        
     }
 
 }
 
 
 export default (ngModule) => {
-
     ngModule.service('MsgService', MsgService);
-
 };

@@ -3,7 +3,6 @@
  */
 'use strict';
 
-
 function routes($stateProvider, $urlRouterProvider, $locationProvider) {
     /* @ngInject */
 
@@ -14,8 +13,7 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
             name: 'home',
             url: '/',
             template: '<home-view></home-view>',
-        })
-
+        });
 }
 
 
@@ -24,5 +22,5 @@ export default (ngModule) => {
     ngModule.config(routes);
     ngModule.run(($state) => {
         $state.transitionTo('home');
-    })
+    });
 };

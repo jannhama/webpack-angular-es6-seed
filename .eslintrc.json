@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "comma-dangle": ["off"],
+        "linebreak-style": ["off"],
+        "indent": ["error", 4],
+        "import/extensions": ["off"],
+        "global-require": ["off"],
+        "space-in-parens": ["off"],
+        "no-unused-vars": [1],
+        "array-bracket-spacing": [1],
+        "strict": [1]
+
+
+
+    }
+}

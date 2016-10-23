@@ -2,36 +2,29 @@
 
 import tpl from './home.html';
 
-
-
-
 class HomeController {
     /* @ngInject */
     constructor() {
-        console.log('homectrl cons.');
+        console.log( 'homectrl cons.' );
         this.homeText = 'Welcome to Home!';
         this.hideItem = false;
     }
 
-
     close() {
-        console.log(JSON.stringify(this, null, 2));
+        console.log( JSON.stringify( this, null, 2 ) );
     }
-
 }
 
-
-export default (ngModule) => {
-
-    ngModule.controller('HomeController', HomeController);
-    ngModule.directive('homeView', () => {
-        console.log('directive home init');
+export default ( ngModule ) => {
+    ngModule.controller( 'HomeController', HomeController );
+    ngModule.directive( 'homeView', () => {
+        console.log( 'directive home init' );
         return {
             restrict: 'E',
             scope: {},
             template: tpl,
             controllerAs: 'ctrl',
             controller: HomeController
-            };
-    })
+        };
+    } );
 };
