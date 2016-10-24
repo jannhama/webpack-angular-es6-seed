@@ -1,0 +1,33 @@
+a {
+    color: #cacaca;
+    text-decoration: none;
+}
+a:hover {
+    color: #cacaca;
+    text-decoration: none;
+}
+a:visited {
+    color: #cacaca;
+    text-decoration: none;
+}
+a:active {
+    color: #cacaca;
+    text-decoration: none;
+}
+.nv-navibar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background-color: #000;
+    color: #ffffcc;
+    height: 2em;
+    text-decoration: none;
+}
+.nv-navi-link {
+    color: #cacaca;
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+.nv-navi-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
