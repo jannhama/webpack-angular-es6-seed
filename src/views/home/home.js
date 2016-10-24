@@ -22,7 +22,7 @@ export default ( ngModule ) => {
         return {
             restrict: 'E',
             scope: {},
-            template: tpl,
+            template: require('./home.html'),
             controllerAs: 'ctrl',
             controller: HomeController
         };

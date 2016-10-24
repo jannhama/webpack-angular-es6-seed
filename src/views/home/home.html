@@ -1,17 +1,21 @@
 <!--- Simple html template for the home view -->
 
-<div uib-alert class="alert-success" close="ctrl.close()">HELLO</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="home">
+            {{ctrl.homeText}}
+        </div>
+        <nv-hello></nv-hello>
+        <nv-greetings></nv-greetings>
 
-<div class="home">
-    Yoman! {{ctrl.homeText}}
-</div>
-<nv-hello></nv-hello>
-<nv-greetings></nv-greetings>
+        <pre>{{ctrl.hideItem | json}}</pre>
 
-<pre>{{ctrl.hideItem | json}}</pre>
-
-<button ng-click="ctrl.hideItem=false">Fade In!</button>
-<button ng-click="ctrl.hideItem=true">Fade Out!</button>
-<div ng-hide="ctrl.hideItem" class="dfade">
-    Fade me in out
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" ng-click="ctrl.hideItem=false">Fade In!</button>
+            <button type="button" class="btn btn-default" ng-click="ctrl.hideItem=true">Fade Out!</button>
+        </div>
+        <div ng-hide="ctrl.hideItem" class="dfade">
+            Fade me in out
+        </div>
+    </div>
 </div>

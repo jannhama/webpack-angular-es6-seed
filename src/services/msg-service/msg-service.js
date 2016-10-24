@@ -4,7 +4,7 @@ class MsgService {
     /* @ngInject */
     constructor() {
         console.log(JSON.stringify('service', null, 2));
-        this.homeText = 'Welcome to Home MsgService!';
+        this.homeText = 'This message comes from MsgService';
     }
 
     getText() {

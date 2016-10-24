@@ -1,9 +1,8 @@
-import tpl from './nv-hello.html';
 
 class ExampleController {
     /* @ngInject */
     constructor() {
-        this.greeting = 'Hello THere!';
+        this.greeting = 'This message is stored in the controller';
     }
 }
 
@@ -15,7 +14,7 @@ export default (ngModule) => {
         return {
             restric: 'E',
             scope: {},
-            template: tpl,
+            template: require('.//nv-hello.html'),
             controllerAs: 'ctrl',
             controller: ExampleController
         };
