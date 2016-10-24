@@ -13,7 +13,13 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
             name: 'home',
             url: '/',
             template: '<home-view></home-view>',
+        })
+        .state({
+            name: 'about',
+            url: '/about',
+            template: '<about-view></about-view>',
         });
+
 }
 
 

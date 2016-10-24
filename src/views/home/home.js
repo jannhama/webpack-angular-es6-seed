@@ -1,7 +1,5 @@
 'use strict';
 
-import tpl from './home.html';
-
 class HomeController {
     /* @ngInject */
     constructor() {
