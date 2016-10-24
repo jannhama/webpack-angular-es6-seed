@@ -34,9 +34,4 @@ Code is output to `./bin folder`
 
 
 
-&copy; 2016 Janne Hämäläinen. Released under MIT license.
-  
-  
-
-
-
+&copy; 2016 Janne Hämäläinen. Released under [MIT](https://opensource.org/licenses/MIT) license.
