@@ -1,22 +1,14 @@
-'use strict';
-
 class HomeController {
     /* @ngInject */
     constructor() {
-        console.log( 'homectrl cons.' );
         this.homeText = 'Welcome to Home!';
         this.hideItem = false;
     }
-
-    close() {
-        console.log( JSON.stringify( this, null, 2 ) );
-    }
 }
 
-export default ( ngModule ) => {
-    ngModule.controller( 'HomeController', HomeController );
-    ngModule.directive( 'homeView', () => {
-        console.log( 'directive home init' );
+export default (ngModule) => {
+    ngModule.controller('HomeController', HomeController);
+    ngModule.directive('homeView', () => {
         return {
             restrict: 'E',
             scope: {},
@@ -24,5 +16,5 @@ export default ( ngModule ) => {
             controllerAs: 'ctrl',
             controller: HomeController
         };
-    } );
+    });
 };

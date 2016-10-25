@@ -1,9 +1,5 @@
 import './nv-greetings.scss';
 
-
-export default ngModule => {
-    console.log('foo-greetings');
+export default (ngModule) => {
     require('./nv-greetings').default(ngModule);
 };
-
-

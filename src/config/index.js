@@ -1,12 +1,5 @@
-/**
- * Created by Z800 on 17.10.2016.
- */
-'use strict';
-
-function routes($stateProvider, $urlRouterProvider, $locationProvider) {
+function routes($stateProvider) {
     /* @ngInject */
-
-    console.log('Config');
 
     $stateProvider
         .state({
@@ -19,12 +12,9 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/about',
             template: '<about-view></about-view>',
         });
-
 }
 
-
 export default (ngModule) => {
-    console.log(JSON.stringify('config export', null, 2));
     ngModule.config(routes);
     ngModule.run(($state) => {
         $state.transitionTo('home');

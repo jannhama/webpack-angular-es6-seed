@@ -1,6 +1,3 @@
-"use strict";
-
-export default ngModule => {
+export default (ngModule) => {
     require('./msg-service').default(ngModule);
 };
-

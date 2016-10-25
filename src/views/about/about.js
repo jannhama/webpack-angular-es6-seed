@@ -1,22 +1,14 @@
-'use strict';
-
 class AboutController {
     /* @ngInject */
     constructor() {
-        console.log( 'Aboutctrl cons.' );
         this.aboutText = 'Welcome to about!';
         this.hideItem = false;
     }
-
-    close() {
-        console.log( JSON.stringify( this, null, 2 ) );
-    }
 }
 
-export default ( ngModule ) => {
-    ngModule.controller( 'AboutController', AboutController );
-    ngModule.directive( 'aboutView', () => {
-        console.log( 'directive About init' );
+export default (ngModule) => {
+    ngModule.controller('AboutController', AboutController);
+    ngModule.directive('aboutView', () => {
         return {
             restrict: 'E',
             scope: {},
@@ -24,5 +16,5 @@ export default ( ngModule ) => {
             controllerAs: 'ctrl',
             controller: AboutController
         };
-    } );
+    });
 };

@@ -10,7 +10,6 @@ class ExampleController {
 export default (ngModule) => {
     ngModule.controller('ExampleController', ExampleController);
     ngModule.directive('nvHello', () => {
-        console.log('directive init');
         return {
             restric: 'E',
             scope: {},
