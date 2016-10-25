@@ -1,4 +1,4 @@
-# Minimal webpack app with AngularJS (seed)
+# Minimal AngularJS application with Webpack and ES6
 
 Purpose of this project is to offer easy starting point for AngularJS application
 development utilizing webpack as bundling tool.
