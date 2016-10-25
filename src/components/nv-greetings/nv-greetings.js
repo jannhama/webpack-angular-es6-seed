@@ -18,7 +18,7 @@ export default (ngModule) => {
             scope: {},
             template: require('.//nv-greetings.html'),
             controllerAs: 'ctrl',
-            controller: GreetingController;
+            controller: GreetingController
         }
     });
 };
