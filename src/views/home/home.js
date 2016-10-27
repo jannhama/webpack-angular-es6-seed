@@ -7,7 +7,6 @@ class HomeController {
 }
 
 export default (ngModule) => {
-    ngModule.controller('HomeController', HomeController);
     ngModule.directive('homeView', () => {
         return {
             restrict: 'E',

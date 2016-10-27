@@ -11,7 +11,6 @@ class GreetingController {
 }
 
 export default (ngModule) => {
-    ngModule.controller('GreetingController', GreetingController);
     ngModule.directive('nvGreetings', () => {
         return {
             restric: 'E',

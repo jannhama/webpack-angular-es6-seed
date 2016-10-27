@@ -8,7 +8,6 @@ class ExampleController {
 
 
 export default (ngModule) => {
-    ngModule.controller('ExampleController', ExampleController);
     ngModule.directive('nvHello', () => {
         return {
             restric: 'E',

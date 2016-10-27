@@ -10,8 +10,5 @@
         "no-unused-vars": [1],
         "array-bracket-spacing": [1],
         "strict": [1]
-
-
-
     }
 }

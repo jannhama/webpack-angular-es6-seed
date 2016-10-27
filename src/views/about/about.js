@@ -7,7 +7,6 @@ class AboutController {
 }
 
 export default (ngModule) => {
-    ngModule.controller('AboutController', AboutController);
     ngModule.directive('aboutView', () => {
         return {
             restrict: 'E',
