@@ -2,7 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
-var NODE_ENV = process.env.NODE_ENV || 'development';
+let env = (process.env.NODE_ENV || 'development');
+const NODE_ENV = env.trim(env);
 
 var webpackConf = {
     cache: true,
@@ -47,13 +48,16 @@ var webpackConf = {
         new webpack.optimize.DedupePlugin(),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('production')
+                'NODE_ENV': NODE_ENV.trim(NODE_ENV)
             }
         })
     ]
 };
 
+// For final binary we disable source maps and uglify code
 if (NODE_ENV === 'production') {
+    console.log('Compressing...');
+    webpackConf.devtool='';
     webpackConf.plugins.push(new webpack.optimize.UglifyJsPlugin({
         compress: {
             warnings: true
