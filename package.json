@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Sample webpack project from scratch",
   "main": "index.js",
+  "repository": "https://github.com/jannhama/webpack-angular-es6-seed",
   "scripts": {
-    "build": "webpack",
+    "build": "set NODE_ENV=production && webpack -p",
     "start": "node_modules/.bin/webpack-dev-server --content-base ./bin/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +24,7 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.22.0",
     "jquery": "^3.1.1",
-    "node-sass": "^3.10.1",
+    "node-sass": "^3.13.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
