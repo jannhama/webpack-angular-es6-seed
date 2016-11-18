@@ -2,8 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
-let env = (process.env.NODE_ENV || 'development');
-const NODE_ENV = env.trim(env);
+const NODE_ENV = (process.env.NODE_ENV || 'development').trim();
 
 var webpackConf = {
     cache: true,
