@@ -3,6 +3,10 @@ class HomeController {
     constructor() {
         this.homeText = 'Welcome to Home!';
         this.hideItem = false;
+        if (NODE_ENV==='development') {
+            console.log('We are in development mode!');
+        }
+
     }
 }
 

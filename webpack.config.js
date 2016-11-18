@@ -4,6 +4,8 @@ const webpack = require('webpack');
 const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 const NODE_ENV = (process.env.NODE_ENV || 'development').trim();
 
+console.log(NODE_ENV);
+
 var webpackConf = {
     cache: true,
     context: path.join(__dirname, 'src'),
@@ -45,10 +47,9 @@ var webpackConf = {
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': NODE_ENV.trim(NODE_ENV)
+            'NODE_ENV': JSON.stringify(NODE_ENV)
             }
-        })
+        )
     ]
 };
 
