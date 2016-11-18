@@ -15,7 +15,6 @@ var webpackConf = {
     },
     resolve: {
         modulesDirectories: ['node_modules']
-
     },
     module: {
         loaders: [{
